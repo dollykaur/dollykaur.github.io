@@ -1,5 +1,6 @@
 import React from "react";
-import mock01 from '../assets/images/mock01.png';
+import ariaTerminal from '../assets/images/aria-terminal.png';
+import grafanaDashboard from '../assets/images/grafana-dashboard.png';
 import mock02 from '../assets/images/mock02.png';
 import mock03 from '../assets/images/mock03.png';
 import mock04 from '../assets/images/mock04.png';
@@ -17,7 +18,12 @@ function Project() {
         <h1>Personal Projects</h1>
         <div className="projects-grid">
             <div className="project">
-                <a href="https://github.com/dollykaur/distributed-notification-service" target="_blank" rel="noreferrer"><img src={mock01} className="zoom" alt="thumbnail" width="100%"/></a>
+                <a href="https://github.com/dollykaur/aria" target="_blank" rel="noreferrer"><img src={ariaTerminal} className="zoom" alt="thumbnail" width="100%"/></a>
+                <a href="https://github.com/dollykaur/aria" target="_blank" rel="noreferrer"><h2>ARIA — Autonomous Resilience & Incident Agent</h2></a>
+                <p>Built an autonomous SRE agent that detects anomalies across distributed systems, investigates root causes using a Claude AI tool-use loop, and self-heals with safety guardrails. Features fleet-wide incident correlation, evolution tracking across recurrences, adaptive tool selection, and an incident memory engine with 4-dimension similarity scoring.</p>
+            </div>
+            <div className="project">
+                <a href="https://github.com/dollykaur/distributed-notification-service" target="_blank" rel="noreferrer"><img src={grafanaDashboard} className="zoom" alt="thumbnail" width="100%"/></a>
                 <a href="https://github.com/dollykaur/distributed-notification-service" target="_blank" rel="noreferrer"><h2>Distributed Notification Service</h2></a>
                 <p>Built a distributed, event-driven notification microservice using Spring Boot, Apache Kafka, PostgreSQL and Redis. Supports Email, SMS and Push channels with DLQ, retry mechanism, idempotency and Prometheus/Grafana monitoring.</p>
             </div>
